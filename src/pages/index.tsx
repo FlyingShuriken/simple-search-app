@@ -39,7 +39,7 @@ export default function Home() {
 		fetchData(`/api/user${name === "" ? "" : "?name=" + name}`, running).then(
 			(profilesLocal: Profile[]) => {
 				if (name !== "")
-					// Set the autocomplete names
+					// Set the autocomplete names that filtered by the name if the name is start with what the user typed
 					setAutoCompleteNames(
 						profilesLocal
 							.map((profile) => profile.name)
