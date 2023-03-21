@@ -11,6 +11,7 @@ git clone https://github.com/FlyingShuriken/simple-search-app.git
 Install the dependencies
 
 ```bash
+cd .\simple-search-app\
 npm i
 ```
 
