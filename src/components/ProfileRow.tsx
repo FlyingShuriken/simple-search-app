@@ -14,7 +14,7 @@ export const ProfileRow = ({ profile }: { profile: Profile }) => {
 				<div className="profileEmail text-base text-gray-400 dark:text-gray-500">
 					{profile.email}
 				</div>
-				<div className="profileDates flex flex-col gap-1 py-1">
+				{/* <div className="profileDates flex flex-col gap-1 py-1">
 					<div className="profileEmailCreatedAt">
 						Created at: {profile.created_at.toLocaleString()}
 					</div>
@@ -24,7 +24,7 @@ export const ProfileRow = ({ profile }: { profile: Profile }) => {
 					<div className="profileEmailUpdatedAt">
 						Updated at: {profile.updated_at.toLocaleString()}
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</>
 	);

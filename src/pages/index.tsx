@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { ProfileRow } from "@/components/ProfileRow";
 import { Profile } from "@/models/ProfileModel";
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -92,6 +93,13 @@ export default function Home() {
 						>
 							Clear
 						</button>
+						<Link
+							href={`/search/${name}`}
+							className="border rounded-lg px-2 py-1"
+						>
+							{" "}
+							Search
+						</Link>
 					</div>
 					{autoCompleteNames.length > 0 &&
 						(autoCompleteNames.length !== 1 || autoCompleteNames[0] !== name ? (
@@ -109,11 +117,11 @@ export default function Home() {
 						) : (
 							<></>
 						))}
-					<div className="profiles flex flex-col gap-3 pt-5">
+					{/* <div className="profiles flex flex-col gap-3 pt-5">
 						{profiles.map((profile) => (
 							<ProfileRow profile={profile} key={profile.id} />
 						))}
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</>
