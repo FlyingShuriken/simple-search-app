@@ -85,7 +85,10 @@ export default function Home() {
 						/>
 						<button
 							className="border rounded-lg px-2 py-1"
-							onClick={() => setName("")}
+							onClick={() => {
+								setName("");
+								setAutoCompleteNames([]);
+							}}
 						>
 							Clear
 						</button>
