@@ -96,7 +96,7 @@ export default function Home() {
 								{autoCompleteNames.map((nameLocal) => (
 									<div
 										key={nameLocal}
-										className="name px-2 my-1 hover:bg-slate-400 dark:hover:bg-slate-200 cursor-pointer"
+										className="name px-2 my-1 hover:bg-slate-200 dark:hover:bg-slate-600 cursor-pointer"
 										onClick={() => setName(nameLocal)}
 									>
 										{nameLocal}
